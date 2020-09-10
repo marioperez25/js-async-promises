@@ -12,7 +12,7 @@ export function getCatch() {
     .then( ({data}) => { // destructured response
         setText(JSON.stringify(data)); //set text prints result NO AXIOS related
     })
-    .catch(error => {setText(error)});
+    .catch(error => setText(error));
 }
 
 export function chain() {
